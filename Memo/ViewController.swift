@@ -74,6 +74,14 @@ class ViewController: UIViewController {
         }
     }
     
+    func deleteMemo(_ indexPath: IndexPath) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let memo = memos[indexPath.row]
+        managedContext.delete(memo)
+        memos.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -89,5 +97,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, success) in
+            self.deleteMemo(indexPath)
+            success(true)
+        }
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
 }
