@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69742AA724BF2BCB0076776A /* MemoScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 69742AA624BF2BCB0076776A /* MemoScreenshot.png */; };
 		697802D8248BE2B200952508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697802D7248BE2B200952508 /* AppDelegate.swift */; };
 		697802DA248BE2B200952508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697802D9248BE2B200952508 /* SceneDelegate.swift */; };
 		697802DC248BE2B200952508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697802DB248BE2B200952508 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69742AA524BF2ABA0076776A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		69742AA624BF2BCB0076776A /* MemoScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemoScreenshot.png; sourceTree = "<group>"; };
 		697802D4248BE2B200952508 /* Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697802D7248BE2B200952508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		697802D9248BE2B200952508 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,8 @@
 		697802CB248BE2B200952508 = {
 			isa = PBXGroup;
 			children = (
+				69742AA524BF2ABA0076776A /* README.md */,
+				69742AA624BF2BCB0076776A /* MemoScreenshot.png */,
 				697802D6248BE2B200952508 /* Memo */,
 				697802D5248BE2B200952508 /* Products */,
 			);
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				697802E7248BE2B700952508 /* LaunchScreen.storyboard in Resources */,
+				69742AA724BF2BCB0076776A /* MemoScreenshot.png in Resources */,
 				697802E4248BE2B700952508 /* Assets.xcassets in Resources */,
 				697802DF248BE2B200952508 /* Main.storyboard in Resources */,
 			);
